@@ -11,17 +11,17 @@ const answer7 = document.querySelector("#answer7");
 const name = document.querySelector("#your-name");
 
 name.addEventListener("keyup", () => {
-  const value = name.value;
+    const value = name.value;
 
-  answer1.textContent = getNumberOfChars(value);
-  answer2.textContent = getFirstChar(value);
-  answer3.textContent = getLastChar(value);
-  answer4.textContent = getLower(value);
-  answer5.textContent = getUpper(value);
-  if (value) {
-    answer6.textContent = getCapitalized(value);
-  } else {
-    answer6.textContent = "";
-  }
-  answer7.textContent = getClean(value);
+    answer1.textContent = getNumberOfChars(value);
+    answer2.textContent = getFirstChar(value);
+    answer3.textContent = getLastChar(value);
+    answer4.textContent = getLower(value);
+    answer5.textContent = getUpper(value);
+    if (value) {
+        answer6.textContent = getCapitalized(value);
+    } else {
+        answer6.textContent = "";
+    }
+    answer7.textContent = getClean(value);
 });
